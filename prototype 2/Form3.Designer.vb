@@ -23,11 +23,6 @@ Partial Class Form3
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.income = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -51,7 +46,6 @@ Partial Class Form3
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.income.SuspendLayout()
         Me.texpense.SuspendLayout()
         Me.budget.SuspendLayout()
         Me.expence.SuspendLayout()
@@ -71,64 +65,6 @@ Partial Class Form3
         Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(200, 36)
         Me.Guna2DateTimePicker1.TabIndex = 1
         Me.Guna2DateTimePicker1.Value = New Date(2024, 7, 15, 10, 12, 57, 429)
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(8, 58)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(179, 17)
-        Me.Label6.TabIndex = 8
-        Me.Label6.Text = " - - - - - - - - - - - - - - - - - - -"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(7, 75)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 20)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Income"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(7, 38)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(105, 20)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Total Income"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'income
-        '
-        Me.income.BackColor = System.Drawing.Color.OliveDrab
-        Me.income.Controls.Add(Me.Label6)
-        Me.income.Controls.Add(Me.Label5)
-        Me.income.Controls.Add(Me.Label4)
-        Me.income.Controls.Add(Me.Label3)
-        Me.income.Location = New System.Drawing.Point(20, 421)
-        Me.income.Name = "income"
-        Me.income.Size = New System.Drawing.Size(190, 119)
-        Me.income.TabIndex = 2
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(6, 9)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(98, 29)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Income"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label7
         '
@@ -183,7 +119,7 @@ Partial Class Form3
         Me.texpense.Controls.Add(Me.Label9)
         Me.texpense.Controls.Add(Me.Label8)
         Me.texpense.Controls.Add(Me.Label10)
-        Me.texpense.Location = New System.Drawing.Point(216, 421)
+        Me.texpense.Location = New System.Drawing.Point(48, 421)
         Me.texpense.Name = "texpense"
         Me.texpense.Size = New System.Drawing.Size(190, 119)
         Me.texpense.TabIndex = 3
@@ -195,7 +131,7 @@ Partial Class Form3
         Me.budget.Controls.Add(Me.Label18)
         Me.budget.Controls.Add(Me.Label16)
         Me.budget.Controls.Add(Me.Label17)
-        Me.budget.Location = New System.Drawing.Point(608, 421)
+        Me.budget.Location = New System.Drawing.Point(564, 421)
         Me.budget.Name = "budget"
         Me.budget.Size = New System.Drawing.Size(190, 119)
         Me.budget.TabIndex = 4
@@ -287,7 +223,7 @@ Partial Class Form3
         Me.expence.Controls.Add(Me.Label19)
         Me.expence.Controls.Add(Me.Label12)
         Me.expence.Controls.Add(Me.Label14)
-        Me.expence.Location = New System.Drawing.Point(412, 421)
+        Me.expence.Location = New System.Drawing.Point(304, 421)
         Me.expence.Name = "expence"
         Me.expence.Size = New System.Drawing.Size(190, 119)
         Me.expence.TabIndex = 4
@@ -309,7 +245,6 @@ Partial Class Form3
         Me.Guna2GradientPanel2.Controls.Add(Me.expence)
         Me.Guna2GradientPanel2.Controls.Add(Me.budget)
         Me.Guna2GradientPanel2.Controls.Add(Me.texpense)
-        Me.Guna2GradientPanel2.Controls.Add(Me.income)
         Me.Guna2GradientPanel2.Controls.Add(Me.Guna2DateTimePicker1)
         Me.Guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2GradientPanel2.Location = New System.Drawing.Point(252, 0)
@@ -431,9 +366,8 @@ Partial Class Form3
         Me.Controls.Add(Me.Guna2GradientPanel2)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Name = "Form3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
-        Me.income.ResumeLayout(False)
-        Me.income.PerformLayout()
         Me.texpense.ResumeLayout(False)
         Me.texpense.PerformLayout()
         Me.budget.ResumeLayout(False)
@@ -448,11 +382,6 @@ Partial Class Form3
     End Sub
 
     Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents income As Panel
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label

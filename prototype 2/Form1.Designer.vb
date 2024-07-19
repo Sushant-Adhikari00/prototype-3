@@ -254,6 +254,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.Guna2GradientPanel2.ResumeLayout(False)
         Me.Guna2GradientPanel2.PerformLayout()

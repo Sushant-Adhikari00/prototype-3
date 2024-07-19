@@ -145,6 +145,7 @@ Partial Class Report_form
         Me.ClientSize = New System.Drawing.Size(1062, 572)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Name = "Report_form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form5"
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()

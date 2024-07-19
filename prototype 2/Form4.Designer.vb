@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Category_form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,14 @@ Partial Class Category_form
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
+        Me.update_btn = New Guna.UI2.WinForms.Guna2Button()
+        Me.dlt_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.datagrid = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -37,10 +37,6 @@ Partial Class Category_form
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Catagory = New System.Windows.Forms.Label()
-        Me.Category = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.amount = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Transaction_Date = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Description = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.datagrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -62,39 +58,39 @@ Partial Class Category_form
         Me.Guna2Button5.TabIndex = 31
         Me.Guna2Button5.Text = "Add Category"
         '
-        'Guna2Button3
+        'update_btn
         '
-        Me.Guna2Button3.AutoRoundedCorners = True
-        Me.Guna2Button3.BorderRadius = 21
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.FillColor = System.Drawing.Color.Orange
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Location = New System.Drawing.Point(358, 483)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(81, 45)
-        Me.Guna2Button3.TabIndex = 29
-        Me.Guna2Button3.Text = "Update"
+        Me.update_btn.AutoRoundedCorners = True
+        Me.update_btn.BorderRadius = 21
+        Me.update_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.update_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.update_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.update_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.update_btn.FillColor = System.Drawing.Color.Orange
+        Me.update_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.update_btn.ForeColor = System.Drawing.Color.White
+        Me.update_btn.Location = New System.Drawing.Point(358, 483)
+        Me.update_btn.Name = "update_btn"
+        Me.update_btn.Size = New System.Drawing.Size(81, 45)
+        Me.update_btn.TabIndex = 29
+        Me.update_btn.Text = "Update"
         '
-        'Guna2Button4
+        'dlt_btn
         '
-        Me.Guna2Button4.AutoRoundedCorners = True
-        Me.Guna2Button4.BorderRadius = 21
-        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.Location = New System.Drawing.Point(445, 483)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(81, 45)
-        Me.Guna2Button4.TabIndex = 30
-        Me.Guna2Button4.Text = "Delete"
+        Me.dlt_btn.AutoRoundedCorners = True
+        Me.dlt_btn.BorderRadius = 21
+        Me.dlt_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.dlt_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.dlt_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.dlt_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.dlt_btn.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.dlt_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.dlt_btn.ForeColor = System.Drawing.Color.White
+        Me.dlt_btn.Location = New System.Drawing.Point(445, 483)
+        Me.dlt_btn.Name = "dlt_btn"
+        Me.dlt_btn.Size = New System.Drawing.Size(81, 45)
+        Me.dlt_btn.TabIndex = 30
+        Me.dlt_btn.Text = "Delete"
         '
         'datagrid
         '
@@ -110,7 +106,6 @@ Partial Class Category_form
         Me.datagrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.datagrid.ColumnHeadersHeight = 19
         Me.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.datagrid.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Category, Me.amount, Me.Transaction_Date, Me.Description})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -265,42 +260,20 @@ Partial Class Category_form
         Me.Catagory.TabIndex = 25
         Me.Catagory.Text = "Catagory"
         '
-        'Category
-        '
-        Me.Category.HeaderText = "Category"
-        Me.Category.MinimumWidth = 6
-        Me.Category.Name = "Category"
-        '
-        'amount
-        '
-        Me.amount.HeaderText = "Amount"
-        Me.amount.MinimumWidth = 6
-        Me.amount.Name = "amount"
-        '
-        'Transaction_Date
-        '
-        Me.Transaction_Date.HeaderText = "Transaction Date"
-        Me.Transaction_Date.MinimumWidth = 6
-        Me.Transaction_Date.Name = "Transaction_Date"
-        '
-        'Description
-        '
-        Me.Description.HeaderText = "Description"
-        Me.Description.MinimumWidth = 6
-        Me.Description.Name = "Description"
-        '
         'Category_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1062, 572)
         Me.Controls.Add(Me.Guna2Button5)
-        Me.Controls.Add(Me.Guna2Button3)
-        Me.Controls.Add(Me.Guna2Button4)
+        Me.Controls.Add(Me.update_btn)
+        Me.Controls.Add(Me.dlt_btn)
         Me.Controls.Add(Me.datagrid)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Controls.Add(Me.Catagory)
         Me.Name = "Category_form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form4"
         CType(Me.datagrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GradientPanel1.ResumeLayout(False)
@@ -311,8 +284,8 @@ Partial Class Category_form
     End Sub
 
     Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents update_btn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents dlt_btn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents datagrid As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
@@ -322,8 +295,4 @@ Partial Class Category_form
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Catagory As Label
-    Friend WithEvents Category As DataGridViewTextBoxColumn
-    Friend WithEvents amount As DataGridViewTextBoxColumn
-    Friend WithEvents Transaction_Date As DataGridViewTextBoxColumn
-    Friend WithEvents Description As DataGridViewTextBoxColumn
 End Class
