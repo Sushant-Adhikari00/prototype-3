@@ -22,19 +22,19 @@ Partial Class Report_form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton4 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.categoryChart = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Catagory = New System.Windows.Forms.Label()
+        Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientPanel1.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.categoryChart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2GradientPanel1
@@ -50,26 +50,6 @@ Partial Class Report_form
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(252, 572)
         Me.Guna2GradientPanel1.TabIndex = 19
-        '
-        'logout_btn
-        '
-        Me.logout_btn.AutoRoundedCorners = True
-        Me.logout_btn.BorderRadius = 21
-        Me.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.logout_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.logout_btn.FillColor = System.Drawing.Color.Red
-        Me.logout_btn.FillColor2 = System.Drawing.Color.Red
-        Me.logout_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.logout_btn.ForeColor = System.Drawing.Color.White
-        Me.logout_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.logout_btn.Location = New System.Drawing.Point(30, 397)
-        Me.logout_btn.Name = "logout_btn"
-        Me.logout_btn.Size = New System.Drawing.Size(180, 45)
-        Me.logout_btn.TabIndex = 16
-        Me.logout_btn.Text = "Logout"
         '
         'Guna2GradientButton2
         '
@@ -143,45 +123,71 @@ Partial Class Report_form
         Me.Guna2GradientButton4.TabIndex = 12
         Me.Guna2GradientButton4.Text = "Report"
         '
-        'Chart1
+        'categoryChart
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(258, 117)
-        Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(741, 300)
-        Me.Chart1.TabIndex = 20
-        Me.Chart1.Text = "Chart1"
+        ChartArea2.Name = "ChartArea1"
+        Me.categoryChart.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.categoryChart.Legends.Add(Legend2)
+        Me.categoryChart.Location = New System.Drawing.Point(271, 125)
+        Me.categoryChart.Name = "categoryChart"
+        Me.categoryChart.Size = New System.Drawing.Size(741, 300)
+        Me.categoryChart.TabIndex = 20
+        '
+        'Catagory
+        '
+        Me.Catagory.AutoSize = True
+        Me.Catagory.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Catagory.Location = New System.Drawing.Point(288, 54)
+        Me.Catagory.Name = "Catagory"
+        Me.Catagory.Size = New System.Drawing.Size(121, 38)
+        Me.Catagory.TabIndex = 26
+        Me.Catagory.Text = "Report"
+        '
+        'logout_btn
+        '
+        Me.logout_btn.AutoRoundedCorners = True
+        Me.logout_btn.BorderRadius = 21
+        Me.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logout_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.logout_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.logout_btn.ForeColor = System.Drawing.Color.White
+        Me.logout_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logout_btn.Location = New System.Drawing.Point(30, 405)
+        Me.logout_btn.Name = "logout_btn"
+        Me.logout_btn.Size = New System.Drawing.Size(180, 45)
+        Me.logout_btn.TabIndex = 16
+        Me.logout_btn.Text = "Logout"
         '
         'Report_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1062, 572)
-        Me.Controls.Add(Me.Chart1)
+        Me.Controls.Add(Me.Catagory)
+        Me.Controls.Add(Me.categoryChart)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Name = "Report_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "*"
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.categoryChart, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton4 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents categoryChart As DataVisualization.Charting.Chart
+    Friend WithEvents Catagory As Label
+    Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
 End Class

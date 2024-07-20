@@ -41,11 +41,11 @@ Partial Class Form3
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton4 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.texpense.SuspendLayout()
         Me.budget.SuspendLayout()
         Me.expence.SuspendLayout()
@@ -272,26 +272,6 @@ Partial Class Form3
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "General"
         '
-        'logout_btn
-        '
-        Me.logout_btn.AutoRoundedCorners = True
-        Me.logout_btn.BorderRadius = 21
-        Me.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.logout_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.logout_btn.FillColor = System.Drawing.Color.Red
-        Me.logout_btn.FillColor2 = System.Drawing.Color.Red
-        Me.logout_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.logout_btn.ForeColor = System.Drawing.Color.White
-        Me.logout_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.logout_btn.Location = New System.Drawing.Point(27, 402)
-        Me.logout_btn.Name = "logout_btn"
-        Me.logout_btn.Size = New System.Drawing.Size(180, 45)
-        Me.logout_btn.TabIndex = 5
-        Me.logout_btn.Text = "Logout"
-        '
         'Guna2GradientButton4
         '
         Me.Guna2GradientButton4.AutoRoundedCorners = True
@@ -348,9 +328,9 @@ Partial Class Form3
         '
         'Guna2GradientPanel1
         '
+        Me.Guna2GradientPanel1.Controls.Add(Me.logout_btn)
         Me.Guna2GradientPanel1.Controls.Add(Me.Label2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Label1)
-        Me.Guna2GradientPanel1.Controls.Add(Me.logout_btn)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton4)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton1)
@@ -359,6 +339,24 @@ Partial Class Form3
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(252, 572)
         Me.Guna2GradientPanel1.TabIndex = 2
+        '
+        'logout_btn
+        '
+        Me.logout_btn.AutoRoundedCorners = True
+        Me.logout_btn.BorderRadius = 21
+        Me.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logout_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.logout_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.logout_btn.ForeColor = System.Drawing.Color.White
+        Me.logout_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logout_btn.Location = New System.Drawing.Point(29, 414)
+        Me.logout_btn.Name = "logout_btn"
+        Me.logout_btn.Size = New System.Drawing.Size(180, 45)
+        Me.logout_btn.TabIndex = 8
+        Me.logout_btn.Text = "Logout"
         '
         'Form3
         '
@@ -402,9 +400,9 @@ Partial Class Form3
     Friend WithEvents Guna2GradientPanel2 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton4 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
 End Class
