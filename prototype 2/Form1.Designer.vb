@@ -56,7 +56,8 @@ Partial Class Form1
         Me.Guna2GradientPanel2.Controls.Add(Me.tbox_pw)
         Me.Guna2GradientPanel2.Controls.Add(Me.tbox_uname)
         Me.Guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.Red
+        Me.Guna2GradientPanel2.FillColor = System.Drawing.Color.LightCyan
+        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.MediumAquamarine
         Me.Guna2GradientPanel2.Location = New System.Drawing.Point(266, 0)
         Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
         Me.Guna2GradientPanel2.Size = New System.Drawing.Size(796, 572)
@@ -226,6 +227,7 @@ Partial Class Form1
         'Guna2GradientPanel1
         '
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.DarkCyan
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(266, 572)

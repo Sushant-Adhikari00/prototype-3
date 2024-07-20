@@ -1,12 +1,12 @@
 ﻿Public Class Report_form
 
     Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
-        Me.Hide()
+        Me.Close()
         Form3.Show()
     End Sub
 
     Private Sub Guna2GradientButton4_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton4.Click
-        Me.Hide()
+        Me.Close()
         Category_form.Show()
     End Sub
     Private Sub logout_btn_Click(sender As Object, e As EventArgs) Handles logout_btn.Click

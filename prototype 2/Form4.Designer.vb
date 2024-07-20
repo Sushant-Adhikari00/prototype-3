@@ -22,13 +22,12 @@ Partial Class Category_form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.add_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.update_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.dlt_btn = New Guna.UI2.WinForms.Guna2Button()
-        Me.datagrid = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -37,26 +36,50 @@ Partial Class Category_form
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Catagory = New System.Windows.Forms.Label()
-        CType(Me.datagrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2TabControl1 = New Guna.UI2.WinForms.Guna2TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.datagrid = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.tbox_desp = New System.Windows.Forms.TextBox()
+        Me.tbox_amount = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.tbox_date = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.tbox_category = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.tbox_updesp = New System.Windows.Forms.TextBox()
+        Me.tbox_upamt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.tbox_update = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.tbox_name = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.tbox_dlt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.tbox_id = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GradientPanel1.SuspendLayout()
+        Me.Guna2TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        CType(Me.datagrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Guna2Button5
+        'add_btn
         '
-        Me.Guna2Button5.AutoRoundedCorners = True
-        Me.Guna2Button5.BorderRadius = 21
-        Me.Guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button5.FillColor = System.Drawing.Color.LightCoral
-        Me.Guna2Button5.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.Location = New System.Drawing.Point(822, 483)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(180, 45)
-        Me.Guna2Button5.TabIndex = 31
-        Me.Guna2Button5.Text = "Add Category"
+        Me.add_btn.AutoRoundedCorners = True
+        Me.add_btn.BorderRadius = 21
+        Me.add_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.add_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.add_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.add_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.add_btn.FillColor = System.Drawing.Color.LightCoral
+        Me.add_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.add_btn.ForeColor = System.Drawing.Color.White
+        Me.add_btn.Location = New System.Drawing.Point(418, 447)
+        Me.add_btn.Name = "add_btn"
+        Me.add_btn.Size = New System.Drawing.Size(180, 45)
+        Me.add_btn.TabIndex = 31
+        Me.add_btn.Text = "Add Category"
         '
         'update_btn
         '
@@ -69,7 +92,7 @@ Partial Class Category_form
         Me.update_btn.FillColor = System.Drawing.Color.Orange
         Me.update_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.update_btn.ForeColor = System.Drawing.Color.White
-        Me.update_btn.Location = New System.Drawing.Point(358, 483)
+        Me.update_btn.Location = New System.Drawing.Point(517, 453)
         Me.update_btn.Name = "update_btn"
         Me.update_btn.Size = New System.Drawing.Size(81, 45)
         Me.update_btn.TabIndex = 29
@@ -86,63 +109,11 @@ Partial Class Category_form
         Me.dlt_btn.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.dlt_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.dlt_btn.ForeColor = System.Drawing.Color.White
-        Me.dlt_btn.Location = New System.Drawing.Point(445, 483)
+        Me.dlt_btn.Location = New System.Drawing.Point(101, 207)
         Me.dlt_btn.Name = "dlt_btn"
-        Me.dlt_btn.Size = New System.Drawing.Size(81, 45)
+        Me.dlt_btn.Size = New System.Drawing.Size(107, 45)
         Me.dlt_btn.TabIndex = 30
         Me.dlt_btn.Text = "Delete"
-        '
-        'datagrid
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.datagrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datagrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.datagrid.ColumnHeadersHeight = 19
-        Me.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datagrid.DefaultCellStyle = DataGridViewCellStyle3
-        Me.datagrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.datagrid.Location = New System.Drawing.Point(321, 121)
-        Me.datagrid.Name = "datagrid"
-        Me.datagrid.RowHeadersVisible = False
-        Me.datagrid.RowHeadersWidth = 51
-        Me.datagrid.RowTemplate.Height = 24
-        Me.datagrid.Size = New System.Drawing.Size(720, 341)
-        Me.datagrid.TabIndex = 28
-        Me.datagrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.datagrid.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.datagrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.datagrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.datagrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.datagrid.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.datagrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.datagrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.datagrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.datagrid.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datagrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.datagrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.datagrid.ThemeStyle.HeaderStyle.Height = 19
-        Me.datagrid.ThemeStyle.ReadOnly = False
-        Me.datagrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.datagrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.datagrid.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.datagrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.datagrid.ThemeStyle.RowsStyle.Height = 24
-        Me.datagrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.datagrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
         'logout_btn
         '
@@ -254,11 +225,363 @@ Partial Class Category_form
         '
         Me.Catagory.AutoSize = True
         Me.Catagory.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Catagory.Location = New System.Drawing.Point(325, 54)
+        Me.Catagory.Location = New System.Drawing.Point(281, 9)
         Me.Catagory.Name = "Catagory"
         Me.Catagory.Size = New System.Drawing.Size(158, 38)
         Me.Catagory.TabIndex = 25
-        Me.Catagory.Text = "Catagory"
+        Me.Catagory.Text = "Category"
+        '
+        'Guna2TabControl1
+        '
+        Me.Guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage1)
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage2)
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage3)
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage4)
+        Me.Guna2TabControl1.ItemSize = New System.Drawing.Size(180, 40)
+        Me.Guna2TabControl1.Location = New System.Drawing.Point(258, 54)
+        Me.Guna2TabControl1.Name = "Guna2TabControl1"
+        Me.Guna2TabControl1.SelectedIndex = 0
+        Me.Guna2TabControl1.Size = New System.Drawing.Size(792, 506)
+        Me.Guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
+        Me.Guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
+        Me.Guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White
+        Me.Guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty
+        Me.Guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonIdleState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
+        Me.Guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty
+        Me.Guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonSelectedState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!)
+        Me.Guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
+        Me.Guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonSize = New System.Drawing.Size(180, 40)
+        Me.Guna2TabControl1.TabIndex = 33
+        Me.Guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.datagrid)
+        Me.TabPage1.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(604, 498)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Category"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'datagrid
+        '
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.datagrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datagrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.datagrid.ColumnHeadersHeight = 19
+        Me.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagrid.DefaultCellStyle = DataGridViewCellStyle6
+        Me.datagrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagrid.Location = New System.Drawing.Point(3, 0)
+        Me.datagrid.Name = "datagrid"
+        Me.datagrid.RowHeadersVisible = False
+        Me.datagrid.RowHeadersWidth = 51
+        Me.datagrid.RowTemplate.Height = 24
+        Me.datagrid.Size = New System.Drawing.Size(595, 495)
+        Me.datagrid.TabIndex = 33
+        Me.datagrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.datagrid.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.datagrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.datagrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.datagrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.datagrid.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.datagrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datagrid.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.datagrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.datagrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.datagrid.ThemeStyle.HeaderStyle.Height = 19
+        Me.datagrid.ThemeStyle.ReadOnly = False
+        Me.datagrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.datagrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.datagrid.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.datagrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.datagrid.ThemeStyle.RowsStyle.Height = 24
+        Me.datagrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.datagrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.Label3)
+        Me.TabPage2.Controls.Add(Me.tbox_desp)
+        Me.TabPage2.Controls.Add(Me.tbox_amount)
+        Me.TabPage2.Controls.Add(Me.tbox_date)
+        Me.TabPage2.Controls.Add(Me.tbox_category)
+        Me.TabPage2.Controls.Add(Me.add_btn)
+        Me.TabPage2.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(604, 498)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Add Category"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(71, 321)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(79, 17)
+        Me.Label3.TabIndex = 36
+        Me.Label3.Text = "Description"
+        '
+        'tbox_desp
+        '
+        Me.tbox_desp.Location = New System.Drawing.Point(64, 341)
+        Me.tbox_desp.Multiline = True
+        Me.tbox_desp.Name = "tbox_desp"
+        Me.tbox_desp.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_desp.TabIndex = 35
+        '
+        'tbox_amount
+        '
+        Me.tbox_amount.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_amount.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_amount.DefaultText = ""
+        Me.tbox_amount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_amount.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_amount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_amount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_amount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_amount.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_amount.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_amount.Location = New System.Drawing.Point(64, 244)
+        Me.tbox_amount.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_amount.Name = "tbox_amount"
+        Me.tbox_amount.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_amount.PlaceholderText = "Amount"
+        Me.tbox_amount.SelectedText = ""
+        Me.tbox_amount.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_amount.TabIndex = 34
+        '
+        'tbox_date
+        '
+        Me.tbox_date.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_date.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_date.DefaultText = ""
+        Me.tbox_date.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_date.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_date.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_date.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_date.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_date.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_date.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_date.Location = New System.Drawing.Point(64, 153)
+        Me.tbox_date.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_date.Name = "tbox_date"
+        Me.tbox_date.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_date.PlaceholderText = "Transaction Date"
+        Me.tbox_date.SelectedText = ""
+        Me.tbox_date.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_date.TabIndex = 33
+        '
+        'tbox_category
+        '
+        Me.tbox_category.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_category.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_category.DefaultText = ""
+        Me.tbox_category.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_category.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_category.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_category.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_category.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_category.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_category.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_category.Location = New System.Drawing.Point(64, 71)
+        Me.tbox_category.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_category.Name = "tbox_category"
+        Me.tbox_category.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_category.PlaceholderText = "Category Name"
+        Me.tbox_category.SelectedText = ""
+        Me.tbox_category.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_category.TabIndex = 32
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.tbox_id)
+        Me.TabPage3.Controls.Add(Me.Label4)
+        Me.TabPage3.Controls.Add(Me.tbox_updesp)
+        Me.TabPage3.Controls.Add(Me.tbox_upamt)
+        Me.TabPage3.Controls.Add(Me.tbox_update)
+        Me.TabPage3.Controls.Add(Me.tbox_name)
+        Me.TabPage3.Controls.Add(Me.update_btn)
+        Me.TabPage3.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(604, 498)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Update Category"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(124, 346)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(79, 17)
+        Me.Label4.TabIndex = 41
+        Me.Label4.Text = "Description"
+        '
+        'tbox_updesp
+        '
+        Me.tbox_updesp.Location = New System.Drawing.Point(117, 366)
+        Me.tbox_updesp.Multiline = True
+        Me.tbox_updesp.Name = "tbox_updesp"
+        Me.tbox_updesp.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_updesp.TabIndex = 40
+        '
+        'tbox_upamt
+        '
+        Me.tbox_upamt.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_upamt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_upamt.DefaultText = ""
+        Me.tbox_upamt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_upamt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_upamt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_upamt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_upamt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_upamt.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_upamt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_upamt.Location = New System.Drawing.Point(117, 269)
+        Me.tbox_upamt.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_upamt.Name = "tbox_upamt"
+        Me.tbox_upamt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_upamt.PlaceholderText = "Amount"
+        Me.tbox_upamt.SelectedText = ""
+        Me.tbox_upamt.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_upamt.TabIndex = 39
+        '
+        'tbox_update
+        '
+        Me.tbox_update.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_update.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_update.DefaultText = ""
+        Me.tbox_update.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_update.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_update.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_update.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_update.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_update.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_update.Location = New System.Drawing.Point(117, 178)
+        Me.tbox_update.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_update.Name = "tbox_update"
+        Me.tbox_update.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_update.PlaceholderText = "Transaction Date"
+        Me.tbox_update.SelectedText = ""
+        Me.tbox_update.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_update.TabIndex = 38
+        '
+        'tbox_name
+        '
+        Me.tbox_name.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_name.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_name.DefaultText = ""
+        Me.tbox_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_name.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_name.Location = New System.Drawing.Point(117, 100)
+        Me.tbox_name.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_name.Name = "tbox_name"
+        Me.tbox_name.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_name.PlaceholderText = "Category Name"
+        Me.tbox_name.SelectedText = ""
+        Me.tbox_name.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_name.TabIndex = 37
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.Label5)
+        Me.TabPage4.Controls.Add(Me.tbox_dlt)
+        Me.TabPage4.Controls.Add(Me.dlt_btn)
+        Me.TabPage4.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(604, 498)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Delete Category"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(96, 68)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(184, 25)
+        Me.Label5.TabIndex = 42
+        Me.Label5.Text = "Enter Category ID"
+        '
+        'tbox_dlt
+        '
+        Me.tbox_dlt.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_dlt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_dlt.DefaultText = ""
+        Me.tbox_dlt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_dlt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_dlt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_dlt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_dlt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_dlt.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_dlt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_dlt.Location = New System.Drawing.Point(101, 112)
+        Me.tbox_dlt.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_dlt.Name = "tbox_dlt"
+        Me.tbox_dlt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_dlt.PlaceholderText = "Category Name"
+        Me.tbox_dlt.SelectedText = ""
+        Me.tbox_dlt.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_dlt.TabIndex = 38
+        '
+        'tbox_id
+        '
+        Me.tbox_id.BorderColor = System.Drawing.Color.Navy
+        Me.tbox_id.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.tbox_id.DefaultText = ""
+        Me.tbox_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.tbox_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.tbox_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.tbox_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_id.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.tbox_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tbox_id.Location = New System.Drawing.Point(117, 28)
+        Me.tbox_id.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.tbox_id.Name = "tbox_id"
+        Me.tbox_id.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.tbox_id.PlaceholderText = "Category Id"
+        Me.tbox_id.SelectedText = ""
+        Me.tbox_id.Size = New System.Drawing.Size(370, 48)
+        Me.tbox_id.TabIndex = 42
         '
         'Category_form
         '
@@ -266,27 +589,31 @@ Partial Class Category_form
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1062, 572)
-        Me.Controls.Add(Me.Guna2Button5)
-        Me.Controls.Add(Me.update_btn)
-        Me.Controls.Add(Me.dlt_btn)
-        Me.Controls.Add(Me.datagrid)
+        Me.Controls.Add(Me.Guna2TabControl1)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Controls.Add(Me.Catagory)
         Me.Name = "Category_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form4"
-        CType(Me.datagrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = " "
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
+        Me.Guna2TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        CType(Me.datagrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
+        Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents add_btn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents update_btn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents dlt_btn As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents datagrid As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
@@ -295,4 +622,23 @@ Partial Class Category_form
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Catagory As Label
+    Friend WithEvents Guna2TabControl1 As Guna.UI2.WinForms.Guna2TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents datagrid As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents tbox_amount As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents tbox_date As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents tbox_category As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents TabPage4 As TabPage
+    Friend WithEvents Label3 As Label
+    Friend WithEvents tbox_desp As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents tbox_updesp As TextBox
+    Friend WithEvents tbox_upamt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents tbox_update As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents tbox_name As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents tbox_dlt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents tbox_id As Guna.UI2.WinForms.Guna2TextBox
 End Class

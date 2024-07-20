@@ -22,6 +22,9 @@ Partial Class Report_form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -29,7 +32,9 @@ Partial Class Report_form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientButton4 = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Guna2GradientPanel1.SuspendLayout()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2GradientPanel1
@@ -138,17 +143,35 @@ Partial Class Report_form
         Me.Guna2GradientButton4.TabIndex = 12
         Me.Guna2GradientButton4.Text = "Report"
         '
+        'Chart1
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(258, 117)
+        Me.Chart1.Name = "Chart1"
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Size = New System.Drawing.Size(741, 300)
+        Me.Chart1.TabIndex = 20
+        Me.Chart1.Text = "Chart1"
+        '
         'Report_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1062, 572)
+        Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Name = "Report_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form5"
+        Me.Text = "*"
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -160,4 +183,5 @@ Partial Class Report_form
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton4 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
 End Class

@@ -202,20 +202,20 @@ Partial Class Form2
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(70, 22)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(274, 51)
+        Me.Label2.Size = New System.Drawing.Size(163, 51)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Welcome To"
+        Me.Label2.Text = "Sign In"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(70, 73)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(73, 73)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(363, 51)
+        Me.Label1.Size = New System.Drawing.Size(274, 32)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Expense Tracker"
+        Me.Label1.Text = "It’s quick and easy."
         '
         'showpw
         '

@@ -25,7 +25,7 @@ Partial Class Form3
         Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lb_exp = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.texpense = New System.Windows.Forms.Panel()
         Me.budget = New System.Windows.Forms.Panel()
@@ -34,7 +34,7 @@ Partial Class Form3
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lb_texp = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.expence = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -58,11 +58,11 @@ Partial Class Form3
         Me.Guna2DateTimePicker1.Checked = True
         Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(564, 32)
+        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(493, 34)
         Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(200, 36)
+        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(258, 36)
         Me.Guna2DateTimePicker1.TabIndex = 1
         Me.Guna2DateTimePicker1.Value = New Date(2024, 7, 15, 10, 12, 57, 429)
         '
@@ -88,17 +88,17 @@ Partial Class Form3
         Me.Label9.Text = "Total Expence"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'Label8
+        'lb_exp
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(3, 76)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(63, 20)
-        Me.Label8.TabIndex = 6
-        Me.Label8.Text = "Income"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.lb_exp.AutoSize = True
+        Me.lb_exp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_exp.ForeColor = System.Drawing.Color.White
+        Me.lb_exp.Location = New System.Drawing.Point(3, 76)
+        Me.lb_exp.Name = "lb_exp"
+        Me.lb_exp.Size = New System.Drawing.Size(63, 20)
+        Me.lb_exp.TabIndex = 6
+        Me.lb_exp.Text = "Income"
+        Me.lb_exp.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label10
         '
@@ -117,7 +117,7 @@ Partial Class Form3
         Me.texpense.BackColor = System.Drawing.Color.Orange
         Me.texpense.Controls.Add(Me.Label7)
         Me.texpense.Controls.Add(Me.Label9)
-        Me.texpense.Controls.Add(Me.Label8)
+        Me.texpense.Controls.Add(Me.lb_exp)
         Me.texpense.Controls.Add(Me.Label10)
         Me.texpense.Location = New System.Drawing.Point(48, 421)
         Me.texpense.Name = "texpense"
@@ -165,9 +165,9 @@ Partial Class Form3
         Me.Label16.ForeColor = System.Drawing.Color.White
         Me.Label16.Location = New System.Drawing.Point(14, 76)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(63, 20)
+        Me.Label16.Size = New System.Drawing.Size(92, 20)
         Me.Label16.TabIndex = 14
-        Me.Label16.Text = "Income"
+        Me.Label16.Text = "Set Budget"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label17
@@ -192,17 +192,17 @@ Partial Class Form3
         Me.Label19.TabIndex = 12
         Me.Label19.Text = " - - - - - - - - - - - - - - - - - - -"
         '
-        'Label12
+        'lb_texp
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(7, 76)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(63, 20)
-        Me.Label12.TabIndex = 10
-        Me.Label12.Text = "Income"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.lb_texp.AutoSize = True
+        Me.lb_texp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_texp.ForeColor = System.Drawing.Color.White
+        Me.lb_texp.Location = New System.Drawing.Point(7, 76)
+        Me.lb_texp.Name = "lb_texp"
+        Me.lb_texp.Size = New System.Drawing.Size(63, 20)
+        Me.lb_texp.TabIndex = 10
+        Me.lb_texp.Text = "Income"
+        Me.lb_texp.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label11
         '
@@ -221,7 +221,7 @@ Partial Class Form3
         Me.expence.BackColor = System.Drawing.Color.DarkCyan
         Me.expence.Controls.Add(Me.Label11)
         Me.expence.Controls.Add(Me.Label19)
-        Me.expence.Controls.Add(Me.Label12)
+        Me.expence.Controls.Add(Me.lb_texp)
         Me.expence.Controls.Add(Me.Label14)
         Me.expence.Location = New System.Drawing.Point(304, 421)
         Me.expence.Name = "expence"
@@ -255,18 +255,20 @@ Partial Class Form3
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(24, 292)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 17)
+        Me.Label2.Size = New System.Drawing.Size(62, 25)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Extra"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(24, 53)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 17)
+        Me.Label1.Size = New System.Drawing.Size(88, 25)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "General"
         '
@@ -384,7 +386,7 @@ Partial Class Form3
     Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents Label7 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lb_exp As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents texpense As Panel
     Friend WithEvents budget As Panel
@@ -393,7 +395,7 @@ Partial Class Form3
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label19 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lb_texp As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents expence As Panel
     Friend WithEvents Label14 As Label
