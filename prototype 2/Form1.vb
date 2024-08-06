@@ -4,6 +4,7 @@ Public Class Form1
     Dim con As SqlConnection = New SqlConnection("Data Source=SUSHANT;Initial Catalog=project;Integrated Security=True")
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles crteacc_btn.Click
         Me.Hide()
+        Me.Refresh()
         Form2.Show()
     End Sub
 
@@ -22,6 +23,7 @@ Public Class Form1
                 Dim dt As DataTable = New DataTable()
                 sda.Fill(dt)
                 If (dt.Rows.Count > 0) Then
+                    MessageBox.Show("login successful")
                     Me.Hide()
                     Form3.Show()
                 Else

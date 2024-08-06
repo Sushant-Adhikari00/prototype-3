@@ -3,13 +3,15 @@ Imports System.Data.SqlClient
 Public Class Category_form
     Dim con As SqlConnection = New SqlConnection("Data Source=SUSHANT;Initial Catalog=project;Integrated Security=True")
     Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
-        Me.Close()
+        Me.Hide()
+        Me.Refresh()
         Form3.Show()
     End Sub
 
 
     Private Sub Guna2GradientButton4_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton4.Click
-        Me.Close()
+        Me.Hide()
+        Me.Refresh()
         Report_form.Show()
     End Sub
 
@@ -37,6 +39,7 @@ Public Class Category_form
             MessageBox.Show(ex.Message)
         Finally
             con.Close()
+            Me.Refresh()
         End Try
     End Sub
 
@@ -75,6 +78,7 @@ Public Class Category_form
             MessageBox.Show(ex.Message)
         Finally
             con.Close()
+            Me.Refresh()
         End Try
     End Sub
 
@@ -83,18 +87,20 @@ Public Class Category_form
         Dim deleteQuery As String
         Try
             con.Open()
-            deleteQuery = "DELETE FROM [dbo].[MembersDetails] WHERE member_id = " & tbox_dlt.Text & ""
+            deleteQuery = "DELETE FROM [dbo].[category] WHERE id = " & tbox_dlt.Text & ""
             Dim cmd As SqlCommand
             cmd = New SqlCommand(deleteQuery, con)
             cmd.ExecuteNonQuery()
-            MessageBox.Show("Member with ID " & tbox_dlt.Text & "successfully !")
+            MessageBox.Show("Category with ID " & tbox_dlt.Text & "successfully !")
             tbox_dlt.Text = ""
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
             con.Close()
+            Me.Refresh()
         End Try
     End Sub
+
 
     Private Sub FetchAndDisplayData()
         Try
@@ -119,7 +125,7 @@ Public Class Category_form
         If result = MsgBoxResult.Yes Then
             ' Code to log out the user
             ' For example, close the current form
-            Me.Close()
+            Me.Hide()
             Form1.Show()
         ElseIf result = MsgBoxResult.No Then
             ' No action needed, just close the message box

@@ -22,9 +22,10 @@ Partial Class Category_form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.add_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.update_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.dlt_btn = New Guna.UI2.WinForms.Guna2Button()
@@ -55,6 +56,9 @@ Partial Class Category_form
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbox_dlt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.minimize = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.close = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -92,7 +96,7 @@ Partial Class Category_form
         Me.update_btn.FillColor = System.Drawing.Color.Orange
         Me.update_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.update_btn.ForeColor = System.Drawing.Color.White
-        Me.update_btn.Location = New System.Drawing.Point(517, 453)
+        Me.update_btn.Location = New System.Drawing.Point(406, 447)
         Me.update_btn.Name = "update_btn"
         Me.update_btn.Size = New System.Drawing.Size(81, 45)
         Me.update_btn.TabIndex = 29
@@ -291,26 +295,26 @@ Partial Class Category_form
         '
         'datagrid
         '
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
-        Me.datagrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datagrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.datagrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datagrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.datagrid.ColumnHeadersHeight = 19
         Me.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datagrid.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagrid.DefaultCellStyle = DataGridViewCellStyle3
         Me.datagrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.datagrid.Location = New System.Drawing.Point(3, 0)
         Me.datagrid.Name = "datagrid"
@@ -594,10 +598,39 @@ Partial Class Category_form
         Me.tbox_dlt.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_dlt.Name = "tbox_dlt"
         Me.tbox_dlt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.tbox_dlt.PlaceholderText = "Category Name"
+        Me.tbox_dlt.PlaceholderText = "Category Id"
         Me.tbox_dlt.SelectedText = ""
         Me.tbox_dlt.Size = New System.Drawing.Size(370, 48)
         Me.tbox_dlt.TabIndex = 38
+        '
+        'Guna2BorderlessForm1
+        '
+        Me.Guna2BorderlessForm1.ContainerControl = Me
+        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
+        '
+        'minimize
+        '
+        Me.minimize.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.minimize.BackColor = System.Drawing.Color.Transparent
+        Me.minimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
+        Me.minimize.FillColor = System.Drawing.Color.Transparent
+        Me.minimize.IconColor = System.Drawing.Color.DimGray
+        Me.minimize.Location = New System.Drawing.Point(954, 9)
+        Me.minimize.Name = "minimize"
+        Me.minimize.Size = New System.Drawing.Size(45, 29)
+        Me.minimize.TabIndex = 35
+        '
+        'close
+        '
+        Me.close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.close.BackColor = System.Drawing.Color.Transparent
+        Me.close.FillColor = System.Drawing.Color.Transparent
+        Me.close.IconColor = System.Drawing.Color.DimGray
+        Me.close.Location = New System.Drawing.Point(1005, 9)
+        Me.close.Name = "close"
+        Me.close.Size = New System.Drawing.Size(45, 29)
+        Me.close.TabIndex = 34
         '
         'Category_form
         '
@@ -606,9 +639,12 @@ Partial Class Category_form
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1062, 572)
+        Me.Controls.Add(Me.minimize)
+        Me.Controls.Add(Me.close)
         Me.Controls.Add(Me.Guna2TabControl1)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Controls.Add(Me.Catagory)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Category_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
@@ -658,4 +694,7 @@ Partial Class Category_form
     Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Friend WithEvents minimize As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents close As Guna.UI2.WinForms.Guna2ControlBox
 End Class

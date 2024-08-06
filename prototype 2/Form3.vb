@@ -4,12 +4,12 @@ Public Class Form3
 
     Dim con As SqlConnection = New SqlConnection("Data Source=SUSHANT;Initial Catalog=project;Integrated Security=True")
     Private Sub Guna2GradientButton2_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton2.Click
-        Me.Close()
+        Me.Hide()
         Category_form.Show()
     End Sub
 
     Private Sub Guna2GradientButton4_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton4.Click
-        Me.Close()
+        Me.Hide()
         Report_form.Show()
     End Sub
 
@@ -73,7 +73,7 @@ Public Class Form3
         If result = MsgBoxResult.Yes Then
             ' Code to log out the user
             ' For example, close the current form
-            Me.Close()
+            Me.Hide()
             Form1.Show()
         ElseIf result = MsgBoxResult.No Then
             ' No action needed, just close the message box

@@ -22,6 +22,7 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lb_exp = New System.Windows.Forms.Label()
@@ -38,6 +39,8 @@ Partial Class Form3
         Me.expence = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.minimize = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.close = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Catagory = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -46,6 +49,7 @@ Partial Class Form3
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.texpense.SuspendLayout()
         Me.budget.SuspendLayout()
         Me.expence.SuspendLayout()
@@ -229,6 +233,8 @@ Partial Class Form3
         '
         'Guna2GradientPanel2
         '
+        Me.Guna2GradientPanel2.Controls.Add(Me.minimize)
+        Me.Guna2GradientPanel2.Controls.Add(Me.close)
         Me.Guna2GradientPanel2.Controls.Add(Me.Catagory)
         Me.Guna2GradientPanel2.Controls.Add(Me.expence)
         Me.Guna2GradientPanel2.Controls.Add(Me.budget)
@@ -240,6 +246,29 @@ Partial Class Form3
         Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
         Me.Guna2GradientPanel2.Size = New System.Drawing.Size(810, 572)
         Me.Guna2GradientPanel2.TabIndex = 1
+        '
+        'minimize
+        '
+        Me.minimize.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.minimize.BackColor = System.Drawing.Color.Transparent
+        Me.minimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
+        Me.minimize.FillColor = System.Drawing.Color.Transparent
+        Me.minimize.IconColor = System.Drawing.Color.DimGray
+        Me.minimize.Location = New System.Drawing.Point(702, 12)
+        Me.minimize.Name = "minimize"
+        Me.minimize.Size = New System.Drawing.Size(45, 29)
+        Me.minimize.TabIndex = 30
+        '
+        'close
+        '
+        Me.close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.close.BackColor = System.Drawing.Color.Transparent
+        Me.close.FillColor = System.Drawing.Color.Transparent
+        Me.close.IconColor = System.Drawing.Color.DimGray
+        Me.close.Location = New System.Drawing.Point(753, 12)
+        Me.close.Name = "close"
+        Me.close.Size = New System.Drawing.Size(45, 29)
+        Me.close.TabIndex = 29
         '
         'Catagory
         '
@@ -373,6 +402,12 @@ Partial Class Form3
         Me.logout_btn.TabIndex = 8
         Me.logout_btn.Text = "Logout"
         '
+        'Guna2BorderlessForm1
+        '
+        Me.Guna2BorderlessForm1.ContainerControl = Me
+        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -380,6 +415,7 @@ Partial Class Form3
         Me.ClientSize = New System.Drawing.Size(1062, 572)
         Me.Controls.Add(Me.Guna2GradientPanel2)
         Me.Controls.Add(Me.Guna2GradientPanel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form3"
@@ -420,4 +456,7 @@ Partial Class Form3
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Catagory As Label
+    Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Friend WithEvents minimize As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents close As Guna.UI2.WinForms.Guna2ControlBox
 End Class

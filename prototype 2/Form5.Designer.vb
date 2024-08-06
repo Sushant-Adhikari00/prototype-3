@@ -22,8 +22,9 @@ Partial Class Report_form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Me.components = New System.ComponentModel.Container()
+        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,6 +34,9 @@ Partial Class Report_form
         Me.Guna2GradientButton4 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.categoryChart = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Catagory = New System.Windows.Forms.Label()
+        Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.minimize = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.close = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.categoryChart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -161,10 +165,10 @@ Partial Class Report_form
         '
         'categoryChart
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.categoryChart.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.categoryChart.Legends.Add(Legend3)
+        ChartArea5.Name = "ChartArea1"
+        Me.categoryChart.ChartAreas.Add(ChartArea5)
+        Legend5.Name = "Legend1"
+        Me.categoryChart.Legends.Add(Legend5)
         Me.categoryChart.Location = New System.Drawing.Point(271, 125)
         Me.categoryChart.Name = "categoryChart"
         Me.categoryChart.Size = New System.Drawing.Size(741, 300)
@@ -180,15 +184,47 @@ Partial Class Report_form
         Me.Catagory.TabIndex = 26
         Me.Catagory.Text = "Report"
         '
+        'Guna2BorderlessForm1
+        '
+        Me.Guna2BorderlessForm1.ContainerControl = Me
+        Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
+        Me.Guna2BorderlessForm1.TransparentWhileDrag = True
+        '
+        'minimize
+        '
+        Me.minimize.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.minimize.BackColor = System.Drawing.Color.Transparent
+        Me.minimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
+        Me.minimize.FillColor = System.Drawing.Color.Transparent
+        Me.minimize.IconColor = System.Drawing.Color.DimGray
+        Me.minimize.Location = New System.Drawing.Point(954, 12)
+        Me.minimize.Name = "minimize"
+        Me.minimize.Size = New System.Drawing.Size(45, 29)
+        Me.minimize.TabIndex = 28
+        '
+        'close
+        '
+        Me.close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.close.BackColor = System.Drawing.Color.Transparent
+        Me.close.FillColor = System.Drawing.Color.Transparent
+        Me.close.IconColor = System.Drawing.Color.DimGray
+        Me.close.Location = New System.Drawing.Point(1005, 12)
+        Me.close.Name = "close"
+        Me.close.Size = New System.Drawing.Size(45, 29)
+        Me.close.TabIndex = 27
+        '
         'Report_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1062, 572)
+        Me.Controls.Add(Me.minimize)
+        Me.Controls.Add(Me.close)
         Me.Controls.Add(Me.Catagory)
         Me.Controls.Add(Me.categoryChart)
         Me.Controls.Add(Me.Guna2GradientPanel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Report_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "*"
@@ -209,4 +245,7 @@ Partial Class Report_form
     Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Friend WithEvents minimize As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents close As Guna.UI2.WinForms.Guna2ControlBox
 End Class
