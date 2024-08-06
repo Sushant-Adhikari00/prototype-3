@@ -22,7 +22,6 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.lb_exp = New System.Windows.Forms.Label()
@@ -39,6 +38,7 @@ Partial Class Form3
         Me.expence = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.Catagory = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Guna2GradientButton4 = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -52,19 +52,6 @@ Partial Class Form3
         Me.Guna2GradientPanel2.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Guna2DateTimePicker1
-        '
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(493, 34)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(258, 36)
-        Me.Guna2DateTimePicker1.TabIndex = 1
-        Me.Guna2DateTimePicker1.Value = New Date(2024, 7, 15, 10, 12, 57, 429)
         '
         'Label7
         '
@@ -95,9 +82,9 @@ Partial Class Form3
         Me.lb_exp.ForeColor = System.Drawing.Color.White
         Me.lb_exp.Location = New System.Drawing.Point(3, 76)
         Me.lb_exp.Name = "lb_exp"
-        Me.lb_exp.Size = New System.Drawing.Size(63, 20)
+        Me.lb_exp.Size = New System.Drawing.Size(111, 20)
         Me.lb_exp.TabIndex = 6
-        Me.lb_exp.Text = "Income"
+        Me.lb_exp.Text = "Click To View"
         Me.lb_exp.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label10
@@ -119,9 +106,9 @@ Partial Class Form3
         Me.texpense.Controls.Add(Me.Label9)
         Me.texpense.Controls.Add(Me.lb_exp)
         Me.texpense.Controls.Add(Me.Label10)
-        Me.texpense.Location = New System.Drawing.Point(48, 421)
+        Me.texpense.Location = New System.Drawing.Point(47, 94)
         Me.texpense.Name = "texpense"
-        Me.texpense.Size = New System.Drawing.Size(190, 119)
+        Me.texpense.Size = New System.Drawing.Size(470, 119)
         Me.texpense.TabIndex = 3
         '
         'budget
@@ -131,9 +118,9 @@ Partial Class Form3
         Me.budget.Controls.Add(Me.Label18)
         Me.budget.Controls.Add(Me.Label16)
         Me.budget.Controls.Add(Me.Label17)
-        Me.budget.Location = New System.Drawing.Point(564, 421)
+        Me.budget.Location = New System.Drawing.Point(47, 387)
         Me.budget.Name = "budget"
-        Me.budget.Size = New System.Drawing.Size(190, 119)
+        Me.budget.Size = New System.Drawing.Size(470, 119)
         Me.budget.TabIndex = 4
         '
         'Label20
@@ -199,9 +186,9 @@ Partial Class Form3
         Me.lb_texp.ForeColor = System.Drawing.Color.White
         Me.lb_texp.Location = New System.Drawing.Point(7, 76)
         Me.lb_texp.Name = "lb_texp"
-        Me.lb_texp.Size = New System.Drawing.Size(63, 20)
+        Me.lb_texp.Size = New System.Drawing.Size(111, 20)
         Me.lb_texp.TabIndex = 10
-        Me.lb_texp.Text = "Income"
+        Me.lb_texp.Text = "Click To View"
         Me.lb_texp.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label11
@@ -223,9 +210,9 @@ Partial Class Form3
         Me.expence.Controls.Add(Me.Label19)
         Me.expence.Controls.Add(Me.lb_texp)
         Me.expence.Controls.Add(Me.Label14)
-        Me.expence.Location = New System.Drawing.Point(304, 421)
+        Me.expence.Location = New System.Drawing.Point(47, 239)
         Me.expence.Name = "expence"
-        Me.expence.Size = New System.Drawing.Size(190, 119)
+        Me.expence.Size = New System.Drawing.Size(470, 119)
         Me.expence.TabIndex = 4
         '
         'Label14
@@ -242,19 +229,32 @@ Partial Class Form3
         '
         'Guna2GradientPanel2
         '
+        Me.Guna2GradientPanel2.Controls.Add(Me.Catagory)
         Me.Guna2GradientPanel2.Controls.Add(Me.expence)
         Me.Guna2GradientPanel2.Controls.Add(Me.budget)
         Me.Guna2GradientPanel2.Controls.Add(Me.texpense)
-        Me.Guna2GradientPanel2.Controls.Add(Me.Guna2DateTimePicker1)
         Me.Guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.Guna2GradientPanel2.Location = New System.Drawing.Point(252, 0)
         Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
         Me.Guna2GradientPanel2.Size = New System.Drawing.Size(810, 572)
         Me.Guna2GradientPanel2.TabIndex = 1
         '
+        'Catagory
+        '
+        Me.Catagory.AutoSize = True
+        Me.Catagory.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Catagory.Location = New System.Drawing.Point(40, 32)
+        Me.Catagory.Name = "Catagory"
+        Me.Catagory.Size = New System.Drawing.Size(186, 38)
+        Me.Catagory.TabIndex = 26
+        Me.Catagory.Text = "Dashboard"
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(24, 292)
         Me.Label2.Name = "Label2"
@@ -265,6 +265,7 @@ Partial Class Form3
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(24, 53)
         Me.Label1.Name = "Label1"
@@ -275,14 +276,17 @@ Partial Class Form3
         'Guna2GradientButton4
         '
         Me.Guna2GradientButton4.AutoRoundedCorners = True
+        Me.Guna2GradientButton4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GradientButton4.BorderRadius = 21
         Me.Guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientButton4.FillColor = System.Drawing.Color.White
+        Me.Guna2GradientButton4.FillColor2 = System.Drawing.Color.White
         Me.Guna2GradientButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GradientButton4.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientButton4.ForeColor = System.Drawing.Color.Black
         Me.Guna2GradientButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2GradientButton4.Location = New System.Drawing.Point(27, 334)
         Me.Guna2GradientButton4.Name = "Guna2GradientButton4"
@@ -293,14 +297,17 @@ Partial Class Form3
         'Guna2GradientButton2
         '
         Me.Guna2GradientButton2.AutoRoundedCorners = True
+        Me.Guna2GradientButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GradientButton2.BorderRadius = 21
         Me.Guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientButton2.FillColor = System.Drawing.Color.White
+        Me.Guna2GradientButton2.FillColor2 = System.Drawing.Color.White
         Me.Guna2GradientButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.Black
         Me.Guna2GradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2GradientButton2.Location = New System.Drawing.Point(27, 157)
         Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
@@ -311,14 +318,17 @@ Partial Class Form3
         'Guna2GradientButton1
         '
         Me.Guna2GradientButton1.AutoRoundedCorners = True
+        Me.Guna2GradientButton1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GradientButton1.BorderRadius = 21
         Me.Guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.White
+        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.White
         Me.Guna2GradientButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.Black
         Me.Guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2GradientButton1.Location = New System.Drawing.Point(27, 94)
         Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
@@ -335,6 +345,8 @@ Partial Class Form3
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton1)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(252, 572)
@@ -343,14 +355,17 @@ Partial Class Form3
         'logout_btn
         '
         Me.logout_btn.AutoRoundedCorners = True
+        Me.logout_btn.BackColor = System.Drawing.Color.Transparent
         Me.logout_btn.BorderRadius = 21
         Me.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.logout_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.logout_btn.FillColor = System.Drawing.Color.White
+        Me.logout_btn.FillColor2 = System.Drawing.Color.White
         Me.logout_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.logout_btn.ForeColor = System.Drawing.Color.White
+        Me.logout_btn.ForeColor = System.Drawing.Color.Black
         Me.logout_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.logout_btn.Location = New System.Drawing.Point(29, 414)
         Me.logout_btn.Name = "logout_btn"
@@ -375,13 +390,12 @@ Partial Class Form3
         Me.expence.ResumeLayout(False)
         Me.expence.PerformLayout()
         Me.Guna2GradientPanel2.ResumeLayout(False)
+        Me.Guna2GradientPanel2.PerformLayout()
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents Label7 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents lb_exp As Label
@@ -405,4 +419,5 @@ Partial Class Form3
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Catagory As Label
 End Class

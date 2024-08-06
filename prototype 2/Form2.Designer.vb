@@ -37,7 +37,6 @@ Partial Class Form2
         Me.login_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.tbox_lname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.tbox_fname = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.error_fname = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.error_lname = New System.Windows.Forms.ErrorProvider(Me.components)
@@ -70,10 +69,12 @@ Partial Class Form2
         Me.Guna2GradientPanel2.Controls.Add(Me.tbox_lname)
         Me.Guna2GradientPanel2.Controls.Add(Me.tbox_fname)
         Me.Guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.Red
-        Me.Guna2GradientPanel2.Location = New System.Drawing.Point(266, 0)
+        Me.Guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.Guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal
+        Me.Guna2GradientPanel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
-        Me.Guna2GradientPanel2.Size = New System.Drawing.Size(796, 572)
+        Me.Guna2GradientPanel2.Size = New System.Drawing.Size(1062, 572)
         Me.Guna2GradientPanel2.TabIndex = 3
         '
         'tbox_conpw
@@ -91,7 +92,7 @@ Partial Class Form2
         Me.tbox_conpw.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tbox_conpw.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tbox_conpw.IconLeftOffset = New System.Drawing.Point(10, 0)
-        Me.tbox_conpw.Location = New System.Drawing.Point(179, 377)
+        Me.tbox_conpw.Location = New System.Drawing.Point(350, 386)
         Me.tbox_conpw.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_conpw.Name = "tbox_conpw"
         Me.tbox_conpw.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -115,7 +116,7 @@ Partial Class Form2
         Me.tbox_enterpw.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tbox_enterpw.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tbox_enterpw.IconLeftOffset = New System.Drawing.Point(10, 0)
-        Me.tbox_enterpw.Location = New System.Drawing.Point(179, 321)
+        Me.tbox_enterpw.Location = New System.Drawing.Point(350, 330)
         Me.tbox_enterpw.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_enterpw.Name = "tbox_enterpw"
         Me.tbox_enterpw.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -139,7 +140,7 @@ Partial Class Form2
         Me.tbox_email.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tbox_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tbox_email.IconLeftOffset = New System.Drawing.Point(10, 0)
-        Me.tbox_email.Location = New System.Drawing.Point(179, 265)
+        Me.tbox_email.Location = New System.Drawing.Point(350, 274)
         Me.tbox_email.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_email.Name = "tbox_email"
         Me.tbox_email.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -163,7 +164,7 @@ Partial Class Form2
         Me.tbox_uname.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tbox_uname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tbox_uname.IconLeftOffset = New System.Drawing.Point(10, 0)
-        Me.tbox_uname.Location = New System.Drawing.Point(179, 209)
+        Me.tbox_uname.Location = New System.Drawing.Point(350, 218)
         Me.tbox_uname.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_uname.Name = "tbox_uname"
         Me.tbox_uname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -179,7 +180,7 @@ Partial Class Form2
         Me.minimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
         Me.minimize.FillColor = System.Drawing.Color.Transparent
         Me.minimize.IconColor = System.Drawing.Color.DimGray
-        Me.minimize.Location = New System.Drawing.Point(688, 12)
+        Me.minimize.Location = New System.Drawing.Point(954, 12)
         Me.minimize.Name = "minimize"
         Me.minimize.Size = New System.Drawing.Size(45, 29)
         Me.minimize.TabIndex = 11
@@ -190,7 +191,7 @@ Partial Class Form2
         Me.close.BackColor = System.Drawing.Color.Transparent
         Me.close.FillColor = System.Drawing.Color.Transparent
         Me.close.IconColor = System.Drawing.Color.DimGray
-        Me.close.Location = New System.Drawing.Point(739, 12)
+        Me.close.Location = New System.Drawing.Point(1005, 12)
         Me.close.Name = "close"
         Me.close.Size = New System.Drawing.Size(45, 29)
         Me.close.TabIndex = 10
@@ -200,7 +201,7 @@ Partial Class Form2
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(70, 22)
+        Me.Label2.Location = New System.Drawing.Point(454, 43)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(163, 51)
         Me.Label2.TabIndex = 8
@@ -211,7 +212,7 @@ Partial Class Form2
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(73, 73)
+        Me.Label1.Location = New System.Drawing.Point(394, 94)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(274, 32)
         Me.Label1.TabIndex = 7
@@ -225,7 +226,7 @@ Partial Class Form2
         Me.showpw.CheckedState.BorderRadius = 0
         Me.showpw.CheckedState.BorderThickness = 0
         Me.showpw.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.showpw.Location = New System.Drawing.Point(191, 438)
+        Me.showpw.Location = New System.Drawing.Point(362, 447)
         Me.showpw.Name = "showpw"
         Me.showpw.Size = New System.Drawing.Size(129, 21)
         Me.showpw.TabIndex = 6
@@ -245,11 +246,12 @@ Partial Class Form2
         Me.create_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.create_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.create_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.create_btn.FillColor = System.Drawing.Color.Transparent
+        Me.create_btn.FillColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.create_btn.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.create_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.create_btn.ForeColor = System.Drawing.Color.White
         Me.create_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.create_btn.Location = New System.Drawing.Point(179, 465)
+        Me.create_btn.Location = New System.Drawing.Point(350, 474)
         Me.create_btn.Name = "create_btn"
         Me.create_btn.Size = New System.Drawing.Size(175, 45)
         Me.create_btn.TabIndex = 5
@@ -265,9 +267,11 @@ Partial Class Form2
         Me.login_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.login_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.login_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.login_btn.FillColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.login_btn.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.login_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.login_btn.ForeColor = System.Drawing.Color.White
-        Me.login_btn.Location = New System.Drawing.Point(366, 465)
+        Me.login_btn.Location = New System.Drawing.Point(537, 474)
         Me.login_btn.Name = "login_btn"
         Me.login_btn.Size = New System.Drawing.Size(175, 45)
         Me.login_btn.TabIndex = 3
@@ -288,7 +292,7 @@ Partial Class Form2
         Me.tbox_lname.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tbox_lname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tbox_lname.IconLeftOffset = New System.Drawing.Point(10, 0)
-        Me.tbox_lname.Location = New System.Drawing.Point(366, 153)
+        Me.tbox_lname.Location = New System.Drawing.Point(537, 162)
         Me.tbox_lname.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_lname.Name = "tbox_lname"
         Me.tbox_lname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -312,7 +316,7 @@ Partial Class Form2
         Me.tbox_fname.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.tbox_fname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.tbox_fname.IconLeftOffset = New System.Drawing.Point(10, 0)
-        Me.tbox_fname.Location = New System.Drawing.Point(179, 153)
+        Me.tbox_fname.Location = New System.Drawing.Point(350, 162)
         Me.tbox_fname.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_fname.Name = "tbox_fname"
         Me.tbox_fname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -320,14 +324,6 @@ Partial Class Form2
         Me.tbox_fname.SelectedText = ""
         Me.tbox_fname.Size = New System.Drawing.Size(175, 48)
         Me.tbox_fname.TabIndex = 0
-        '
-        'Guna2GradientPanel1
-        '
-        Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(266, 572)
-        Me.Guna2GradientPanel1.TabIndex = 4
         '
         'Guna2BorderlessForm1
         '
@@ -365,7 +361,6 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1062, 572)
         Me.Controls.Add(Me.Guna2GradientPanel2)
-        Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -393,7 +388,6 @@ Partial Class Form2
     Friend WithEvents login_btn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents tbox_lname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents tbox_fname As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents tbox_conpw As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents tbox_enterpw As Guna.UI2.WinForms.Guna2TextBox

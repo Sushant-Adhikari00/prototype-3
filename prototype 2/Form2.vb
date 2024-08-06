@@ -37,7 +37,7 @@ Public Class Form2
              '" + tbox_conpw.Text + "'); select user_id();"
                 Dim cmd As SqlCommand = New SqlCommand(query, con)
                 cmd.ExecuteNonQuery()
-
+                MessageBox.Show("user added")
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
@@ -57,7 +57,6 @@ Public Class Form2
             error_cpw.SetError(tbox_conpw, String.Empty)
             error_epw.SetError(tbox_enterpw, String.Empty)
             Me.Hide()
-            MessageBox.Show("user added")
             Form1.Show()
         End If
 

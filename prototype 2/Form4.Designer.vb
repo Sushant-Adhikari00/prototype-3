@@ -22,9 +22,9 @@ Partial Class Category_form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.add_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.update_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.dlt_btn = New Guna.UI2.WinForms.Guna2Button()
@@ -34,6 +34,7 @@ Partial Class Category_form
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Catagory = New System.Windows.Forms.Label()
         Me.Guna2TabControl1 = New Guna.UI2.WinForms.Guna2TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
@@ -54,7 +55,6 @@ Partial Class Category_form
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbox_dlt = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.logout_btn = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -118,14 +118,17 @@ Partial Class Category_form
         'Guna2GradientButton2
         '
         Me.Guna2GradientButton2.AutoRoundedCorners = True
+        Me.Guna2GradientButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GradientButton2.BorderRadius = 21
         Me.Guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientButton2.FillColor = System.Drawing.Color.White
+        Me.Guna2GradientButton2.FillColor2 = System.Drawing.Color.White
         Me.Guna2GradientButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientButton2.ForeColor = System.Drawing.Color.Black
         Me.Guna2GradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2GradientButton2.Location = New System.Drawing.Point(30, 158)
         Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
@@ -136,14 +139,17 @@ Partial Class Category_form
         'Guna2GradientButton1
         '
         Me.Guna2GradientButton1.AutoRoundedCorners = True
+        Me.Guna2GradientButton1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GradientButton1.BorderRadius = 21
         Me.Guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientButton1.FillColor = System.Drawing.Color.White
+        Me.Guna2GradientButton1.FillColor2 = System.Drawing.Color.White
         Me.Guna2GradientButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientButton1.ForeColor = System.Drawing.Color.Black
         Me.Guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2GradientButton1.Location = New System.Drawing.Point(30, 98)
         Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
@@ -154,14 +160,17 @@ Partial Class Category_form
         'Guna2GradientButton4
         '
         Me.Guna2GradientButton4.AutoRoundedCorners = True
+        Me.Guna2GradientButton4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2GradientButton4.BorderRadius = 21
         Me.Guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.Guna2GradientButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientButton4.FillColor = System.Drawing.Color.White
+        Me.Guna2GradientButton4.FillColor2 = System.Drawing.Color.White
         Me.Guna2GradientButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2GradientButton4.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientButton4.ForeColor = System.Drawing.Color.Black
         Me.Guna2GradientButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Guna2GradientButton4.Location = New System.Drawing.Point(30, 335)
         Me.Guna2GradientButton4.Name = "Guna2GradientButton4"
@@ -171,13 +180,15 @@ Partial Class Category_form
         '
         'Guna2GradientPanel1
         '
-        Me.Guna2GradientPanel1.Controls.Add(Me.logout_btn)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Label2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Label1)
+        Me.Guna2GradientPanel1.Controls.Add(Me.logout_btn)
+        Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton2)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton1)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GradientButton4)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(252, 572)
@@ -186,20 +197,45 @@ Partial Class Category_form
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(27, 293)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(25, 292)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(40, 17)
-        Me.Label2.TabIndex = 15
+        Me.Label2.Size = New System.Drawing.Size(62, 25)
+        Me.Label2.TabIndex = 18
         Me.Label2.Text = "Extra"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 54)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(25, 54)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 17)
-        Me.Label1.TabIndex = 14
+        Me.Label1.Size = New System.Drawing.Size(88, 25)
+        Me.Label1.TabIndex = 17
         Me.Label1.Text = "General"
+        '
+        'logout_btn
+        '
+        Me.logout_btn.AutoRoundedCorners = True
+        Me.logout_btn.BackColor = System.Drawing.Color.Transparent
+        Me.logout_btn.BorderRadius = 21
+        Me.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logout_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.logout_btn.FillColor = System.Drawing.Color.White
+        Me.logout_btn.FillColor2 = System.Drawing.Color.White
+        Me.logout_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.logout_btn.ForeColor = System.Drawing.Color.Black
+        Me.logout_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logout_btn.Location = New System.Drawing.Point(30, 401)
+        Me.logout_btn.Name = "logout_btn"
+        Me.logout_btn.Size = New System.Drawing.Size(180, 45)
+        Me.logout_btn.TabIndex = 16
+        Me.logout_btn.Text = "Logout"
         '
         'Catagory
         '
@@ -255,26 +291,26 @@ Partial Class Category_form
         '
         'datagrid
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.datagrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.datagrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
+        Me.datagrid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.datagrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.datagrid.ColumnHeadersHeight = 19
         Me.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.datagrid.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagrid.DefaultCellStyle = DataGridViewCellStyle12
         Me.datagrid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.datagrid.Location = New System.Drawing.Point(3, 0)
         Me.datagrid.Name = "datagrid"
@@ -375,7 +411,7 @@ Partial Class Category_form
         Me.tbox_date.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_date.Name = "tbox_date"
         Me.tbox_date.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.tbox_date.PlaceholderText = "Transaction Date"
+        Me.tbox_date.PlaceholderText = "Transaction Date(YYYY-MM-DD)"
         Me.tbox_date.SelectedText = ""
         Me.tbox_date.Size = New System.Drawing.Size(370, 48)
         Me.tbox_date.TabIndex = 33
@@ -493,7 +529,7 @@ Partial Class Category_form
         Me.tbox_update.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.tbox_update.Name = "tbox_update"
         Me.tbox_update.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.tbox_update.PlaceholderText = "Transaction Date"
+        Me.tbox_update.PlaceholderText = "Transaction Date(YYYY-MM-DD)"
         Me.tbox_update.SelectedText = ""
         Me.tbox_update.Size = New System.Drawing.Size(370, 48)
         Me.tbox_update.TabIndex = 38
@@ -563,29 +599,12 @@ Partial Class Category_form
         Me.tbox_dlt.Size = New System.Drawing.Size(370, 48)
         Me.tbox_dlt.TabIndex = 38
         '
-        'logout_btn
-        '
-        Me.logout_btn.AutoRoundedCorners = True
-        Me.logout_btn.BorderRadius = 21
-        Me.logout_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.logout_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.logout_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.logout_btn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.logout_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.logout_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.logout_btn.ForeColor = System.Drawing.Color.White
-        Me.logout_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.logout_btn.Location = New System.Drawing.Point(30, 401)
-        Me.logout_btn.Name = "logout_btn"
-        Me.logout_btn.Size = New System.Drawing.Size(180, 45)
-        Me.logout_btn.TabIndex = 16
-        Me.logout_btn.Text = "Logout"
-        '
         'Category_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1062, 572)
         Me.Controls.Add(Me.Guna2TabControl1)
         Me.Controls.Add(Me.Guna2GradientPanel1)
@@ -616,8 +635,6 @@ Partial Class Category_form
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton4 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents Catagory As Label
     Friend WithEvents Guna2TabControl1 As Guna.UI2.WinForms.Guna2TabControl
     Friend WithEvents TabPage1 As TabPage
@@ -639,4 +656,6 @@ Partial Class Category_form
     Friend WithEvents tbox_dlt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents tbox_id As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents logout_btn As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

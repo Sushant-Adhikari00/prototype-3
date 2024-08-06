@@ -79,4 +79,20 @@ Public Class Form3
             ' No action needed, just close the message box
         End If
     End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+
+        Dim userInput As String = InputBox("Enter the new text for the label:", "Edit Label Text", Label16.Text)
+
+        ' If the user clicked Cancel, InputBox returns an empty string
+        If Not String.IsNullOrEmpty(userInput) Then
+            ' Set the label's text to the user input
+            Label16.Text = Convert.ToDecimal(userInput).ToString("C")
+        Else
+            MessageBox.Show("Operation cancelled or no input provided.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
+
 End Class
