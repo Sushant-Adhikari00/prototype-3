@@ -273,6 +273,7 @@ Partial Class Form3
         'Catagory
         '
         Me.Catagory.AutoSize = True
+        Me.Catagory.BackColor = System.Drawing.Color.Transparent
         Me.Catagory.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Catagory.Location = New System.Drawing.Point(40, 32)
         Me.Catagory.Name = "Catagory"

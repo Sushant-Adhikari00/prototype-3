@@ -36,7 +36,7 @@ Public Class Form1
             End Try
 
         End If
-
+        Me.Refresh()
     End Sub
 
     Private Sub showpw_CheckedChanged(sender As Object, e As EventArgs) Handles showpw.CheckedChanged
